@@ -1,0 +1,155 @@
+<html>
+	<head>
+		<title>s u b f l o w</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
+		<style>
+		@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+      	table,
+      	table td {
+        	border: 0px;
+	        text-align: center;
+    	    vertical-align: middle;
+      	}
+      	a:link {
+      		color: #fff;
+      	}
+      	a:visited {
+      		color: #eee;
+      	}
+      	img {
+      		width: 90%;
+      	}
+      	body{
+	        font-family: "Poppins", sans-serif;
+      	    background-color: #000;
+    		color: #aaa;
+		    margin-left: 10%;
+		    margin-right: 10%;
+		    margin-top: 5%;
+		    margin-bottom: 5%;
+    	}
+    	nobr{
+    		font-size: 80%;
+    	}
+
+    </style>
+	</head>
+	<body>
+		<center>
+		<p>
+			Tap left/right 20% of screen (TV remote: LEFT/RIGHT) to switch animation modes.<br/>
+			Tap upper 60% of the screen (TV remote: UP) to set a beat period.<br/>
+			The more (and more accurately) you click, the better the sync will get.<br/>
+			Swipe left/right to shift beat phase without changing the period.<br/>
+			Tap lower 40% of the screen or (TV remote: DOWN) to pause and then cancel beats. <br/>
+			Vertical swipes change speed in motion modes, but...<br/>
+			...whenever you change the beat period, the speed is recalculated to match it.<br/>
+			For advanced sequencing, read the bottom of this page.
+		</p>
+		<table>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					<img style="margin:5%;border:1px solid #333" src="fast.gif"><br/>
+					<nobr>faster</nobr>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><nobr>OFF</nobr></td>
+				<td></td>
+				<td>
+					<img style="margin:5%;border:1px solid #333" src="stopped.gif"><br/>
+					<nobr>mode 1: stopped</nobr>
+				</td>
+				<td>
+					<img style="margin:5%;border:1px solid #333" src="linear.gif"><br/>
+					<nobr>mode 2: linear</nobr>
+				</td>
+				<td>
+					<img style="margin:5%;border:1px solid #333" src="full.gif"><br/>
+					<nobr>mode 3: full&nbsp;(default)</nobr>
+				</td>
+				<td>
+					<img style="margin:5%;border:1px solid #333" src="source.gif"><br/>
+					<nobr>mode 4: source</nobr>
+				</td>
+				<td>
+					<img style="margin:5%;border:1px solid #333" src="spiral.gif"><br/>
+					<nobr>mode 5: spiral</nobr>
+				</td>
+				<td>
+					<img style="margin:5%;border:1px solid #333" src="shimmer.gif"><br/>
+					<nobr>mode 6: shimmer</nobr>
+				</td>
+				<td>
+					<img style="margin:5%;border:1px solid #333" src="pump.gif"><br/>
+					<nobr>mode 7: pump</nobr>
+				</td>
+				<td></td>
+				<td><span style="color:#000">____</span></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					<img style="margin:5%;border:1px solid #333" src="slow.gif"><br/>
+					slower
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<p>
+			You can remotely set BPM, speed, and mode sequences via UDP (<a href="send_cmd.py">python example with instructions here</a>).<br/>
+			If you do this, the UP command will start the sequence AND sync the beat but will not change the BPM.</br>
+			DOWN will pause the beat. A second DOWN will forget the sequence, and revert to manual control.</br>
+		</p>
+		<p>
+			<a style="text-decorations:none; color:inherit;" href="index.html">go to main page</a>
+		</p>
+
+		</center>
+	</body>
+</html>

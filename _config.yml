@@ -1,0 +1,12 @@
+# Build settings
+markdown: kramdown
+# plugins:
+# - jekyll-feed
+
+# Exclude from processing.
+exclude:
+- README.md
+- CONTRIBUTING.md
+- LICENSE
+- Gemfile
+- Gemfile.lock
