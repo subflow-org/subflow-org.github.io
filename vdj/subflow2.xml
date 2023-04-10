@@ -3,6 +3,7 @@
 	<shift_pad1 />
 	<pad1 name="SeqUp">os2l_cmd 17 100%</pad1>
 	<pad2 name="SeqDn">os2l_cmd 17 50%</pad2>
+	<shift_pad2 name="SeqTrsh">os2l_cmd 17 0%</shift_pad2>
 	<pad3 name="BPMOnly">os2l_cmd 7 0%</pad3>
 	<pad4 name="DirectBeat">os2l_cmd 7 100%</pad4>
 	<pad5 name="BeatZero">os2l_cmd 11 50%</pad5>
