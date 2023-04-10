@@ -37,18 +37,8 @@
     </style>
 	</head>
 	<body>
-		<center>
-		<p>
-			Tap left/right 20% of screen (TV remote: LEFT/RIGHT) to switch animation modes.<br/>
-			Tap upper 60% of the screen (TV remote: UP) to set a beat period.<br/>
-			The more (and more accurately) you click, the better the sync will get.<br/>
-			Swipe left/right to shift beat phase without changing the period.<br/>
-			Tap lower 40% of the screen or (TV remote: DOWN) to pause and then cancel beats. <br/>
-			Vertical swipes change speed in motion modes, but...<br/>
-			...whenever you change the beat period, the speed is recalculated to match it.<br/>
-			For advanced sequencing, read the bottom of this page.
-		</p>
-		<table>
+		<h2>Modes</h2>
+				<table>
 			<tr>
 				<td></td>
 				<td></td>
@@ -141,15 +131,33 @@
 				<td></td>
 			</tr>
 		</table>
+		<h2>UDP Control</h2>
 		<p>
-			You can remotely set BPM, speed, and mode sequences via UDP (<a href="https://github.com/elloskelling/subflow/blob/main/python/send_cmd.py">python example with instructions here</a>).<br/>
-			If you do this, the UP command will start the sequence AND sync the beat but will not change the BPM.</br>
-			DOWN will pause the beat. A second DOWN will forget the sequence, and revert to manual control.</br>
+			You can remotely set BPM, speed, and mode sequences via UDP (<a href="send_cmd.py">python example with instructions here</a>).<br/>
+			If you do this, the UP command will start the sequence AND sync the beat but will not change the BPM.<br/>
+			DOWN will pause the sequence. A second DOWN will forget the sequence, and revert to manual control.<br/>
+			You can also start/pause/forget the sequence using OS2L commands (see below).<br/>
+		</p>
+
+		<h2>OS2L Control</h2>
+		<p>
+			You can control the app using the <a href="http://os2l.org/">OS2L protocol</a> which is supported by most DJ software. </br>
+			See <a href="os2l.html">this page</a> for usage instructions.
+		</p>
+		<h2>Manual Controls</h2>
+		<p>
+			You can control the app using only the screen or TV remote.<br/>
+			Tap left/right 20% of screen (TV remote: LEFT/RIGHT) to switch animation modes.<br/>
+			Tap upper 60% of the screen (TV remote: UP) to set a beat period.<br/>
+			The more (and more accurately) you click, the better the sync will get.<br/>
+			Swipe left/right to shift beat phase without changing the period.<br/>
+			Tap lower 40% of the screen or (TV remote: DOWN) to pause and then cancel beats. <br/>
+			Vertical swipes change speed in motion modes, but...<br/>
+			...whenever you change the beat period, the speed is recalculated to match it.<br/>
+			For advanced sequencing, read the bottom of this page.
 		</p>
 		<p>
 			<a style="text-decorations:none; color:inherit;" href="index.html">go to main page</a>
 		</p>
-
-		</center>
 	</body>
 </html>

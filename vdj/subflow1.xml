@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page name="subflow1">
+	<pad1 name="mode 0">os2l_cmd 23 0%</pad1>
+	<pad2 name="mode 1">os2l_cmd 23 1%</pad2>
+	<pad3 name="mode 2">os2l_cmd 23 2%</pad3>
+	<pad4 name="mode 3">os2l_cmd 23 3%</pad4>
+	<pad5 name="mode 4">os2l_cmd 23 4%</pad5>
+	<pad6 name="mode 5">os2l_cmd 23 5%</pad6>
+	<pad7 name="mode 6">os2l_cmd 23 6%</pad7>
+	<pad8 name="mode 7">os2l_cmd 23 7%</pad8>
+	<menu>Info... =[os2l_info]</menu>
+</page>

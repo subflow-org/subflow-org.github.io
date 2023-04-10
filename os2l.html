@@ -1,0 +1,137 @@
+<html>
+	<head>
+		<title>s u b f l o w</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
+		<style>
+		@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+		table{
+	  		border: 1px solid grey;
+		}
+		th{
+	  		border: 1px solid grey;
+	  		font-weight: bold;
+		}
+		td.left{
+	  		border: 1px solid grey;
+	  		text-align: right;
+	  		padding: 5px;
+	  		vertical-align: middle;
+		}
+		td{
+	  		border: 1px solid grey;
+	  		text-align: center;
+	  		padding: 5px;
+	  		vertical-align: middle;
+		}
+	    a:link {
+	      	color: #fff;
+      	}
+      	a:visited {
+      		color: #eee;
+      	}
+      	img {
+      		width: 90%;
+      	}
+      	body{
+	        font-family: "Poppins", sans-serif;
+      	    background-color: #000;
+    		color: #aaa;
+		    margin-left: 10%;
+		    margin-right: 10%;
+		    margin-top: 5%;
+		    margin-bottom: 5%;
+    	}
+    	nobr{
+    		font-size: 80%;
+    	}
+
+    </style>
+	</head>
+	<body>
+
+		<h2>OS2L Control</h2>
+		<p>
+			You can control the app using the <a href="http://os2l.org/">OS2L protocol</a> which is supported by most DJ software. </br>
+			The app listens on port 27023. It will receive each detected beat and beat magnitude. 
+			It will also respond to the following commands.
+			<br/>
+			<br/>
+
+			<table>
+				<tr>
+					<th>Command</th>
+					<th>OS2L Event</th>
+					<th>OS2L ID</th>
+					<th>OSL2 Param</th>
+					<th>Comments</th>
+				</tr>
+				<tr>
+					<td class="left">Respond to beats instantly</td>
+					<td>"cmd"</td>
+					<td>7</td>
+					<td>100%</td>
+					<td>e.g. <tt>{"evt":"cmd","id":7,"param":100.0}</tt></td>
+				</tr>
+				<tr>
+					<td class="left">Just set BPM</td>
+					<td>"cmd"</td>
+					<td>7</td>
+					<td>0%</td>
+					<td>e.g. <tt>{"evt":"cmd","id":7,"param":100.0}</tt></td>
+				</tr>
+				<tr><td colspan=5></tr>
+				<tr>
+					<td class="left">Set Pulse Size</td>
+					<td>"cmd"</td>
+					<td>11</td>
+					<td>0-100% </td>
+					<td><50% = pulse in<br/>50% = no pulse<br/>>50% = pulse out<br/>e.g. <tt>{"evt":"cmd","id":11,"param":72.0}</tt></td>
+				</tr>
+				<tr><td colspan=5></tr>
+				<tr>
+					<td class="left">Start <a href="controls.html">UDP-loaded sequence</a></td>
+					<td>"cmd"</td>
+					<td>17</td>
+					<td>100%</td>
+					<td>e.g. <tt>{"evt":"cmd","id":17,"param":100.0}</tt></td>
+				</tr>
+				<tr>
+					<td class="left">Pause loaded sequence</td>
+					<td>"cmd"</td>
+					<td>17</td>
+					<td>50%</td>
+					<td>e.g. <tt>{"evt":"cmd","id":17,"param":50.0}</tt></td>
+				</tr>
+				<tr>
+					<td class="left">Discard loaded sequence</td>
+					<td>"cmd"</td>
+					<td>17</td>
+					<td>0%</td>
+					<td>e.g. <tt>{"evt":"cmd","id":17,"param":0.0}</tt></td>
+				</tr>
+				<tr><td colspan=5></tr>
+				<tr>
+					<td class="left">Set Mode</td>
+					<td>"cmd"</td>
+					<td>23</td>
+					<td>0-7%</td>
+					<td>Modes are <a href="controls.html">defined here</a>.<br/>e.g. <tt>{"evt":"cmd","id":23,"param":2.0}</tt></td>
+				</tr>
+			</table>
+		</p>
+		<h2>Example config for VirtualDJ</h2>
+		<h3>Set IP address and port of subflow client<br/><img src="vdj/os2l_settings.jpeg"/></h3>
+		<h3>Configure pads to interact with subflow app</h3>
+		<p> Examples (right-click + save-as-file):
+			<ul>
+				<li><a href="vdj/subflow1.xml">Pad Config 1</li>
+				<li><a href="vdj/subflow2.xml">Pad Config 2</li>
+			</ul>
+		</p>
+		<p>
+			<a style="text-decorations:none; color:inherit;" href="index.html">go to main page</a>
+		</p>
+	</body>
+</html>
