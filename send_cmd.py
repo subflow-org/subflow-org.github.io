@@ -36,6 +36,7 @@
 # BPM - set BPM; argument is the BPM, 20.0 <= BPM <= 480.0
 # SPD - set glide speed; argument is the speed, 0.3 <= SPD <= 6.3
 # SCL - set pulse scale (1.0 = no pulsing); argument scales the beat pulses, 0.7 <= SCL <= 1.3
+# RED - switch color between red and white (1 = red, 0 = white)
 # MOD - set viz mode; argument is cast to an int to become the mode, 0 <= MOD <= 7 
 #	  - duration should be (measure length - 1) to account for the mode transition beat
 # LOP - jump to any valid command; argument is the jmp index (1-based, excluding header)
