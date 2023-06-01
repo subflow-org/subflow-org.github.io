@@ -36,7 +36,7 @@
 # BPM - set BPM; argument is the BPM, 20.0 <= BPM <= 480.0
 # SPD - set glide speed; argument is the speed, 0.3 <= SPD <= 6.3
 # SCL - set pulse scale (1.0 = no pulsing); argument scales the beat pulses, 0.7 <= SCL <= 1.3
-# COL - set color; uses 64-bit RGB palette with two bits per channel (see https://github.com/subflow-org/subflow-org.github.io/blob/main/palette.py)
+# COL - set color; uses 64-bit RGB palette with two bits per channel (see https://subflow.org/palette.jpg)
 # MOD - set viz mode; argument is cast to an int to become the mode, 0 <= MOD <= 7 
 #	  - duration should be (measure length - 1) to account for the mode transition beat
 # LOP - jump to any valid command; argument is the jmp index (1-based, excluding header)
